@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  background-color: #030014;
+}
+
+canvas {
+  background: linear-gradient(0deg, #ff0000, #ff4c00, #ff8500, #ffc800, #feff00, #a4e000, #37e000, #00f6ff, #0064ff, #5800f6, #9900f6);
+  background-size: 2200% 2200%;
+  border: 0px solid grey;
+
+  -webkit-animation: AnimationName 20s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+  }
+
+  @-webkit-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+  }
+  @-moz-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+  }
+  @keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+  }
+}
+
+#bg {
+
+}
+
+#game {
+  margin: auto;
+  display: block;
+  width: 700px;
+  height: 700px;
+  border-style: solid;
+  border-width: 1px;
+  background-image: url("textures/menu.png");
+  font-size: 40px;
+}
+
+#game .screen {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#game .screen.active {
+  display: block;
+}
+
+#main-menu {
+  padding-top: 3em;
+  cursor: pointer;
+  font-size: 0.75em;
+}
+
+ul.menu {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul.menu li {
+  margin: 1em 0;
+}
+
+ul.menu li button {
+  font-family: Arial, sans-serif;
+  font-size: 0.6em;
+  color: #fd94ff;
+  width: 15em;
+  height: 2.5em;
+  background: #000000;
+  border: 0.1em solid #be00f7;
+  box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+  list-style-type: none;
+}
+
+ul.menu li button:hover {
+  background: #212121;
+}
+
+ul.menu li button:active {
+  color: #b5b5b5;
+  background: rgb(0, 0, 0);
+}
+
+ul.menu li button:disabled {
+  background: #787878;
+}
+
+#game div h1 {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fc54ff;
+  font-size: 1.5em;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#controls ol {
+  color: #ffffff;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 32px;
+  list-style: none;
+}
+
+#high-scores ol {
+  color: #ffffff;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 48px;
+  list-style: none;
+}
+
+#game div p {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+#about p {
+  text-align: center;
+}
+
+#game-back {
+
+}
+
+.screen {
+  width: 99%;
+  height: 100%;
+  display: none;
+}
+
+.screen.active {
+  display: block;
+}
+
+#game-back hr {
+  max-width: 320px;
+  border-top: 1px;
+  margin: 0 auto;
+  border-color: #58005c;
+}
+
+#game-back button {
+  font-family: Arial, sans-serif;
+  font-size: 0.9em;
+  color: #fd94ff;
+  width: 12em;
+  height: 3em;
+  background: #000000;
+  border: 0.1em solid #a3a3a3;
+  box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+  margin-top: 25px;
+}
+
+#game-back button:hover {
+  background: #212121;
+}
+
+#game-back button:active {
+  color: #b5b5b5;
+  background: rgb(0, 0, 0);
+}
+
+#controls-list button {
+  font-family: Arial, sans-serif;
+  font-size: 0.3em;
+  color: #fd94ff;
+  width: 8em;
+  height: 3em;
+  background: #000000;
+  border: 0.1em solid #ffffff;
+  border-radius: 0.5em;
+  box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+  margin-bottom: 2em;
+}
+
+#controls-list button:hover {
+  background: #212121;
+}
+
+#controls-list button:active {
+  color: #b5b5b5;
+  background: rgb(0, 0, 0);
+}
+
+#controls-list button:disabled {
+  background: #787878;
+}

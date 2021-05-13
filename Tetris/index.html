@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 3</title>
+    <link rel="stylesheet" type="text/css" href="final.css">
+  </head>
+  <body onload="getControls(); menuInit()" style="">
+    <div id="game">
+      <div class="screen active" id="main-menu">
+        <ul class="menu">
+          <img src="textures/logo.png">
+          <li><button onclick="newGameButton()">Start Game</button></li>
+          <li><button onclick="highScoresButton()">High Scores</button></li>
+          <li><button onclick="controlsButton()">Controls</button></li>
+          <li><button onclick="creditsButton()">Credits</button></li>
+        </ul>
+      </div>
+      <div class="screen" id="new-game">
+        <canvas id="canvas" width="700" height="700"></canvas>
+      </div>
+      <div class="screen" id="high-scores">
+        <h1>High Scores</h1>
+        <ol id="high-scores-list">
+          <li>10000</li>
+          <li>9000</li>
+          <li>8000</li>
+          <li>7000</li>
+          <li>6000</li>
+        </ol>
+        <ul class="menu">
+          <li><button onclick="mainMenuButton()">Back</button></li>
+        </ul>
+      </div>
+      <div class="screen" id="controls">
+        <h1>Controls</h1>
+        <p>Click a button to map a new control.</p>
+        <ol id="controls-list">
+          <li>Move Left: <button id="l" onclick="changeControl('left')">Placeholder</button></li>
+          <li>Move Right: <button id="r" onclick="changeControl('right')">Placeholder</button></li>
+          <li>Rotate Clockwise: <button id="clock" onclick="changeControl('rotClock')">Placeholder</button></li>
+          <li>Rotate Counter-clockwise: <button id="count" onclick="changeControl('rotCount')">Placeholder</button></li>
+          <li>Soft Drop: <button id="soft" onclick="changeControl('soft')">Placeholder</button></li>
+          <li>Hard Drop: <button id="hard" onclick="changeControl('hard')">Placeholder</button></li>
+        </ol>
+        <ul class="menu">
+          <li><button id="back" onclick="mainMenuButton()">Back</button></li>
+        </ul>
+      </div>
+      <div class="screen" id="credits">
+        <h1>Credits</h1>
+        <p>Developed by</p>
+        <p>Karsten Boettcher - CS 5410</p>
+        <ul class="menu">
+          <li><button onclick="mainMenuButton()">Back</button></li>
+        </ul>
+      </div>
+    </div>
+    <div id="game-back" class="screen">
+      <center>
+        <hr>
+        <button onclick="exitGameButton()">Back to Main Menu</button>
+      </center>
+    </div>
+
+    <script src="assets/input.js"></script>
+    <script src="assets/input-mouse.js"></script>
+    <script src="assets/input-key.js"></script>
+    <script src="assets/random-misc.js"></script>
+    <script src="particles/particle-system.js"></script>
+    <script src="particles/particle-render.js"></script>
+    <script src="pieces/i-piece.js"></script>
+    <script src="pieces/j-piece.js"></script>
+    <script src="pieces/l-piece.js"></script>
+    <script src="pieces/o-piece.js"></script>
+    <script src="pieces/s-piece.js"></script>
+    <script src="pieces/t-piece.js"></script>
+    <script src="pieces/z-piece.js"></script>
+    <script src="menu.js"></script>
+    <script src="ai.js"></script>
+    <script src="render.js"></script>
+    <script src="game-model.js"></script>
+    <script src="final.js"></script>
+  </body>
+</html>
