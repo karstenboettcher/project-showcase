@@ -1,0 +1,23 @@
+Create (successful):
+{
+    "body": "{\"type\": \"create\",\"requestId\": \"f71bd8ca-a4c6-4aba-8a4b-bcd3461c5651\",\"widgetId\": \"6155f688-01bb-4462-8eec-6ba9a8afd3f8\",\"owner\": \"Sue Smith\"}"
+}
+
+
+Delete (successful):
+{
+    "body": "{\"type\": \"delete\",\"requestId\": \"f71bd8ca-a4c6-4aba-8a4b-bcd3461c5651\",\"widgetId\": \"6155f688-01bb-4462-8eec-6ba9a8afd3f8\",\"owner\": \"Sue Smith\"}"
+}
+
+
+Update (successful):
+{
+    "body": "{\"type\": \"update\",\"requestId\": \"f71bd8ca-a4c6-4aba-8a4b-bcd3461c5651\",\"widgetId\": \"6155f688-01bb-4462-8eec-6ba9a8afd3f8\",\"owner\": \"Sue Smith\",\"description\": \"loves to dance\"}"
+}
+
+
+Create (failure):
+{
+    "body": "{\"type\": \"create\",\"requestId\": \"f71bd8ca-a4c6-4aba-8a4b-bcd3461c5651\",\"widgetId\": \"6155f688-01bb-4462-8eec-6ba9a8afd3f8\"}"
+}
+
